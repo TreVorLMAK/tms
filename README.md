@@ -77,38 +77,3 @@ src/
 3. **Filtering tasks**: Use the filter buttons to show All, Pending, or Completed tasks.
 4. **Deleting a task**: Click the delete (trash) icon and confirm deletion in the modal.
 
-## Deployment
-
-This application can be easily deployed on Vercel:
-
-1. Push your code to a GitHub repository.
-2. Go to [Vercel](https://vercel.com/) and sign up/log in.
-3. Click "New Project" and import your GitHub repository.
-4. Keep the default settings and click "Deploy".
-
-## Future Enhancements
-
-Potential features for future releases:
-
-- Task search functionality
-- Task categories/labels
-- Task editing
-- Due date notifications
-- Dark mode support
-- Data export options
-- Sync with cloud storage
-- User authentication
-- Shared task lists
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Next.js team for the amazing framework
-- Tailwind CSS for the utility-first CSS framework
-- Vercel for the deployment platform
-
----
-
