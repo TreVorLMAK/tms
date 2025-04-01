@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Task Management Web App
+
+A modern, responsive task management application built with Next.js and React.
+
+## Features
+
+- **Create tasks** with title, description, due date, and priority (High, Medium, Low)
+- **Mark tasks as completed** and filter by status (All, Completed, Pending)
+- **Delete tasks** with a confirmation prompt to prevent accidental deletion
+- **Persist tasks** using browser LocalStorage
+- **Sort tasks** automatically by due date and priority
+- **Responsive design** that works on desktop and mobile devices
+
+## Tech Stack
+
+- **Next.js** (App Router) - For server-side rendering and routing
+- **React** - UI library
+- **React Hooks** - For state and lifecycle features
+- **Context API** - For global state management
+- **Tailwind CSS** - For styling
+- **LocalStorage API** - For data persistence
+- **Vercel** - For deployment
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js 16.x or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/task-management-app.git
+   cd task-management-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Project Structure
+
+```
+src/
+├── app/               # Next.js App Router folder
+│   ├── page.js        # Main application page
+│   ├── layout.js      # Root layout
+│   ├── globals.css    # Global styles
+├── components/        # React components
+│   ├── TaskForm.js    # Form for creating tasks
+│   ├── TaskList.js    # List of tasks
+│   ├── TaskItem.js    # Individual task component
+│   ├── TaskFilter.js  # Filter controls
+│   ├── ConfirmationModal.js  # Deletion confirmation
+├── context/          # React Context
+│   ├── TaskContext.js # Global state management
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Adding a task**: Fill out the form at the top of the page with the task details and click "Add Task".
+2. **Completing a task**: Click the checkbox next to any task to mark it as completed.
+3. **Filtering tasks**: Use the filter buttons to show All, Pending, or Completed tasks.
+4. **Deleting a task**: Click the delete (trash) icon and confirm deletion in the modal.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+This application can be easily deployed on Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+1. Push your code to a GitHub repository.
+2. Go to [Vercel](https://vercel.com/) and sign up/log in.
+3. Click "New Project" and import your GitHub repository.
+4. Keep the default settings and click "Deploy".
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Potential features for future releases:
 
-## Deploy on Vercel
+- Task search functionality
+- Task categories/labels
+- Task editing
+- Due date notifications
+- Dark mode support
+- Data export options
+- Sync with cloud storage
+- User authentication
+- Shared task lists
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- Vercel for the deployment platform
+
+---
+
