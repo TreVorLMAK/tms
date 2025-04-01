@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <TaskForm />
       <div className="mt-8">
-        <h2 className="text-lg font-medium mb-4">Your Tasks</h2>
+        <h2 className="text-lg font-medium mb-4 text-black">Your Tasks</h2>
         <TaskFilter />
         <TaskList />
       </div>

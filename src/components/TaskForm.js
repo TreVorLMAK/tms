@@ -49,7 +49,7 @@ const TaskForm = () => {
 
   return (
     <div className="bg-white shadow rounded-lg p-6 mb-6">
-      <h2 className="text-lg font-medium mb-4">Add New Task</h2>
+      <h2 className="text-lg font-medium mb-4 text-blue-700">Add New Task</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -60,7 +60,7 @@ const TaskForm = () => {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             className={`w-full px-3 py-2 border rounded-md ${
-              errors.title ? 'border-red-500' : 'border-gray-300'
+              errors.title ? 'border-red-500' : 'border-gray-300 text-gray-600'
             }`}
             placeholder="Task title"
           />
@@ -76,7 +76,7 @@ const TaskForm = () => {
           <textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-600"
             rows={3}
             placeholder="Task description (optional)"
           />
@@ -92,7 +92,7 @@ const TaskForm = () => {
               value={dueDate}
               onChange={(e) => setDueDate(e.target.value)}
               className={`w-full px-3 py-2 border rounded-md ${
-                errors.dueDate ? 'border-red-500' : 'border-gray-300'
+                errors.dueDate ? 'border-red-500' : 'border-gray-300 text-gray-400'
               }`}
             />
             {errors.dueDate && (
@@ -107,7 +107,7 @@ const TaskForm = () => {
             <select
               value={priority}
               onChange={(e) => setPriority(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-400"
             >
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
